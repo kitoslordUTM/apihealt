@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                   // Versión de JavaScript de salida
+    "module": "CommonJS",               // Módulos CommonJS para Node.js
+    "esModuleInterop": true,            // Para importar módulos de CommonJS de manera más fácil
+    "skipLibCheck": true,               // Para evitar errores en la compilación de librerías
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",                 // Carpeta de salida de los archivos compilados
+    "rootDir": "./src",                 // Carpeta de entrada de los archivos TypeScript
+    "strict": true                      // Habilitar estrictamente las comprobaciones de tipo
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

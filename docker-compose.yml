@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgres:latest
+    container_name: examenbd
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: holamundo
+      POSTGRES_DB: examenbd
+    ports:
+      - "5439:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
