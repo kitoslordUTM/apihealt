@@ -1,5 +1,5 @@
 import  {  Request, Response,  } from 'express';
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 import { generateToken } from '../utils/jwt';
 import postgresProfile from '../database/db'; // Conexión a la base de datos
 import { Router } from 'express';
